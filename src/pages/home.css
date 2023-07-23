@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+
 .background {
     z-index: -1;
     width: 100vw;
@@ -6,4 +9,33 @@
     background: rgb(58,97,180);
     background: linear-gradient(130deg, rgba(134, 172, 255, 0.445) 22%, rgba(255, 132, 132, 0.445) 36%, rgba(255,255,255,1) 50%);
   }
+
+.left {
+    font-family: 'Righteous', cursive;
+    display: inline-block;
+    margin: 150px 50px 50px 150px;
+    color: #fff;
+}
+
+
+
+.left h1 {
+    font-size: 90px;
+    letter-spacing: 6px;
+    text-shadow: 6px 6px 7px rgba(255, 186, 209, 0.808);
+}
+
+.left p {
+    font-size: 25px;
+    padding-left: 5px;
+    text-shadow: 6px 6px 7px rgba(84, 135, 245, 0.575);
+}
+
+.left img {
+    padding: 0 30px;
+    height: 600px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
   

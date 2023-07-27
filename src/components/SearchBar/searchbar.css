@@ -4,8 +4,8 @@
     display: flex;
     flex-direction: row;
     white-space: nowrap;
-    margin-right: 150px;
     font-family: 'Ubuntu', sans-serif;
+    padding-bottom: 100px;
 }
 
 .search input::placeholder {

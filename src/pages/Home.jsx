@@ -2,6 +2,10 @@ import React from 'react'
 import "./home.css"
 import Image from "../images/illustration.png";
 import SearchBar from '../components/SearchBar/SearchBar';
+import Card from "../components/Card/Card"
+import popular from "../images/trending.png";
+import airing from "../images/airing.png";
+import upcoming from "../images/upcoming.png";
 
 const Home = () => {
   return (
@@ -13,6 +17,12 @@ const Home = () => {
         </div>
         <div className="right">
           <SearchBar />
+          <h5>OR</h5>
+          <div className='cards'>
+            <Card source={popular} text="Check Popular Animes"/>
+            <Card source={airing} text="Check Airing Animes"/>
+            <Card source={upcoming} text="Check Upcoming Animes"/>
+          </div>
         </div>
     </div>
   )

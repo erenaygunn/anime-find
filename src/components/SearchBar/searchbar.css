@@ -1,0 +1,35 @@
+.search {
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    margin-right: 150px;
+}
+.search img {
+    width: 30px;
+}
+
+.search input{
+    transition: background-color 0.5s ease;
+    width: 500px;
+    height: 65px;
+    background: linear-gradient(white, white) padding-box,
+              linear-gradient(to right, rgba(255, 186, 209, 0.808), rgba(84, 135, 245, 0.575)) border-box;
+    border-radius: 50em;
+    border: 3px solid transparent;
+    padding: 20px;
+    font-size: 2rem;
+    font-weight: 300;
+}
+.search input:hover {
+}
+
+.search input:focus {
+    outline: none;
+}
+
+.search button {
+    border: none;
+    background-color: transparent;
+    position: relative;
+    right: 50px;
+}

@@ -17,7 +17,6 @@ const Home = () => {
         </div>
         <div className="right">
           <SearchBar />
-          <h5>OR</h5>
           <div className='cards'>
             <Card source={popular} text="Check Popular Animes"/>
             <Card source={airing} text="Check Airing Animes"/>

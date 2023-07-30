@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
 .search {
+    position: relative;
+    top: 80px;
+    right: -180px;
     display: flex;
     flex-direction: row;
     white-space: nowrap;

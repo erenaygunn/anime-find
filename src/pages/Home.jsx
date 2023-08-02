@@ -6,6 +6,7 @@ import Card from "../components/Card/Card"
 import popular from "../images/trending.png";
 import airing from "../images/airing.png";
 import upcoming from "../images/upcoming.png";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -18,9 +19,15 @@ const Home = () => {
         <div className="right">
           <SearchBar />
           <div className='cards'>
-            <Card source={popular} text="Check Popular Animes"/>
-            <Card source={airing} text="Check Airing Animes"/>
-            <Card source={upcoming} text="Check Upcoming Animes"/>
+            <Link to="/popular">
+              <Card source={popular} text="Check Popular Animes"/>
+            </Link>
+            <Link to="/airing">
+              <Card source={airing} text="Check Airing Animes"/>
+            </Link>
+            <Link to="/upcoming">
+              <Card source={upcoming} text="Check Upcoming Animes"/>
+            </Link>
           </div>
         </div>
     </div>

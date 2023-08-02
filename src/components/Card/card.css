@@ -10,7 +10,7 @@
     color: #696969;
     bottom: 0;
     transition: 0.4s;
-    margin: 35px;
+    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,7 +25,6 @@
 }
 
 .card:hover{
-    color: black;
     animation: rotate 0.5s linear 0.1s;
     bottom: 10px;
     background: rgba(226, 233, 253, 0.61);

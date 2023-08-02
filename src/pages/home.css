@@ -53,9 +53,15 @@
 }
 
 .cards {
-    margin: 200px 100px 0 0;
+    margin: 240px 60px 0 0;
     display: flex;
     padding-right: 20px;
     bottom: 0;
     font-weight: 500;
+}
+
+.cards a {
+    display: inline;
+    text-decoration: none;
+    margin: 35px;
 }

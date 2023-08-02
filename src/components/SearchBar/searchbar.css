@@ -3,7 +3,7 @@
 .search {
     position: relative;
     top: 80px;
-    right: -180px;
+    right: -70px;
     display: flex;
     flex-direction: row;
     white-space: nowrap;
@@ -22,8 +22,8 @@
 
 .search input{
     transition: 0.3s;
-    width: 500px;
-    height: 65px;
+    width: 700px;
+    height: 80px;
     background: linear-gradient(white, white) padding-box,
               linear-gradient(to right, rgba(255, 186, 209, 0.808), rgba(84, 135, 245, 0.575)) border-box;
     border-radius: 50em;
@@ -40,7 +40,7 @@
 
 .search input:focus {
     outline: none;
-    width: 550px;
+    width: 650px;
     -webkit-box-shadow: 16px 14px 35px 5px rgb(255, 225, 238);
     -moz-box-shadow: 16px 14px 35px 5px rgb(255, 225, 238);
     box-shadow: 16px 14px 35px 5px rgb(255, 225, 238);
@@ -54,8 +54,8 @@
     border: none;
     background-color: transparent;
     position: relative;
-    right: 60px;
-    top: 6px;
+    right: 70px;
+    top: 15px;
     border-radius: 50%;
     padding: 0 10px;
     height: 50px;

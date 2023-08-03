@@ -2,6 +2,7 @@ import React from 'react'
 import {useGlobalContext} from "../context/global";
 import { Link } from 'react-router-dom';
 import "./style.css";
+import Navbar from "../components/Navbar/Navbar";
 
 const Popular = () => {
 
@@ -18,8 +19,12 @@ const Popular = () => {
     }
   }
   return (
-    <div className='popular'>
-      {conditionalRender()}
+    <div>
+      <Navbar></Navbar>
+      <div className='popular'>
+      
+        {conditionalRender()}
+      </div>
     </div>
   )
 }

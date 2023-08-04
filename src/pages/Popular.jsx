@@ -22,7 +22,6 @@ const Popular = () => {
     <div>
       <Navbar></Navbar>
       <div className='popular'>
-      
         {conditionalRender()}
       </div>
     </div>

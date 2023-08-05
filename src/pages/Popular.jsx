@@ -11,7 +11,6 @@ const Popular = () => {
   const conditionalRender = () => {
     if(!isSearch){
       return popularAnime.map((anime) => {
-        console.log(anime)
         return <Link to={`/anime/${anime.mal_id}`} key={anime.mal_id}>
           <img src={anime.images.jpg.large_image_url} alt="" />
         </Link> 

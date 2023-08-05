@@ -55,10 +55,18 @@
     background-color: transparent;
 }
 
-.navlinks a{
-    margin-right: 110px;
+.nav-links{
+    list-style: none;
+    display: flex;
 }
 
-.navlinks a:last-child {
-    margin-right: 35px;
+.nav-links li{
+    margin: 13px 40px 0 0;
+}
+
+.nav-links a:last-child {
+    margin-right: 30px;
+}
+
+.active {
 }

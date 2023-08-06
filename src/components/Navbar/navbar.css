@@ -3,7 +3,6 @@
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 10px 25px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
@@ -11,13 +10,19 @@
 
 .navbar a {
     color: black;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-decoration: none;
 }
 
 .navbar .logo {
+    font-weight: bold;
     margin-left: 25px;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    background: #67b3ff;
+    background: linear-gradient(to right, #79bcff 0%, #ffa9e5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
 
 .navbar .search {
@@ -35,11 +40,16 @@
 
 .navbar .search input::placeholder{
     color: #3838388e;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .navbar .search input:focus::placeholder {
     color: white;
+}
+
+.search input:hover, .search input:focus {
+    -webkit-box-shadow: 10px 10px 29px 0px rgba(255, 225, 238, 0.678);
+    -moz-box-shadow: 10px 10px 29px 0px rgba(255, 225, 238, 0.678);
+    box-shadow: 10px 10px 29px 0px rgba(255, 225, 238, 0.678);
 }
 
 .navbar .search img{
@@ -59,31 +69,29 @@
 .nav-links{
     list-style: none;
     display: flex;
-    justify-content: space-evenly;
 }
 
 .nav-links li {
     margin-top: 13px;
+    padding: 0 50px;
 }
 
 .nav-links li a{
-    padding-bottom: 8px;
+    transition: 0.3s;
+    padding: 8px 15px;
     text-align: center;
-    margin: 0px 50px;
+    margin: 0px;
     border-bottom: 3px solid transparent;
     background: linear-gradient(white, white) padding-box,
-              linear-gradient(to right, rgba(84, 135, 245, 0.575),  rgba(255, 186, 209, 0.808)) border-box;
+    linear-gradient(to right, rgba(84, 135, 245, 0.575),  rgba(255, 186, 209, 0.808)) border-box;
 }
 
-.nav-links li a:hover {
-}
-
-.nav-links li .active {
+.nav-links li .active, .nav-links li .active:hover {
     padding: 10px 20px;
     background: rgba(226, 233, 253, 0.61);
-    border-bottom: 6px solid #788cffce ;
+    border-bottom: 5px solid #788cffce ;
     border-radius: 40px;
-    -webkit-box-shadow: 16px 14px 35px 5px rgba(255, 225, 238, 0.678);
-    -moz-box-shadow: 16px 14px 35px 5px rgba(255, 225, 238, 0.678);
-    box-shadow: 2px 2px 15px 2px rgba(255, 225, 238, 0.856);
+    -webkit-box-shadow: 10px 10px 29px 0px rgba(255, 225, 238, 0.678);
+    -moz-box-shadow: 10px 10px 29px 0px rgba(255, 225, 238, 0.678);
+    box-shadow: 10px 10px 29px 0px rgba(255, 225, 238, 0.678);
 }

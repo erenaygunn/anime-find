@@ -1,27 +1,31 @@
 import React from 'react'
 import "./navbar.css";
 import Searchbar from "../SearchBar/SearchBar"
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
 
-  
-  const navLinks = document.querySelectorAll('.nav-links li a');
+  document.addEventListener('DOMContentLoaded', (event) => {
 
-  navLinks.forEach(link => {
-    if((link.getAttribute('href')) === window.location.pathname){
-      link.classList.add('active')
+    const navLinks = document.querySelectorAll('.nav-links li a');
+
+    navLinks.forEach(link => {
+      if((link.getAttribute('href')) === window.location.pathname){
+        link.classList.add('active')
+        }
+      });
     }
-  });
+  )
 
   return (
     <nav className='navbar'>
-      <a href="/">AnimeFind</a>
+      <a href="/" className='logo'>AnimeFind</a>
       <Searchbar></Searchbar>
       <ul className='nav-links'>
-        <li><a href='/popular'>POPULAR</a></li>
-        <li><a href='/airing'>AIRING</a></li>
-        <li><a href='/upcoming'>UPCOMING</a></li>
-        <li><a href='/genres'>GENRES</a></li>
+        <li><NavLink to="/popular">POPULAR</NavLink></li>
+        <li><NavLink to="/airing">AIRING</NavLink></li>
+        <li><NavLink to="/upcoming">UPCOMING</NavLink></li>
+        <li><NavLink to="/genres">GENRES</NavLink></li>
       </ul>
     </nav>
   )

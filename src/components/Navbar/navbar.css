@@ -77,8 +77,10 @@
     padding: 0 50px;
 }
 
+
+
 .nav-links li a{
-    transition: 0.3s;
+    transition: 0.1s;
     padding: 8px 15px;
     text-align: center;
     margin: 0px;
@@ -87,7 +89,12 @@
     linear-gradient(to right, rgba(84, 135, 245, 0.575),  rgba(255, 186, 209, 0.808)) border-box;
 }
 
+.nav-links li a:hover{
+    color: #696969;
+}
+
 .nav-links li .active, .nav-links li .active:hover {
+    color: black;
     padding: 10px 20px;
     background: rgba(226, 233, 253, 0.61);
     border-bottom: 5px solid #788cffce ;

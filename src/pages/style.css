@@ -3,4 +3,28 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    
+}
+
+.popular a{
+    margin: 30px;
+    width: 300px;
+    height: 480px;
+    border-radius: 25px;
+    background: #67b3ff;
+    background: linear-gradient(to right, #79bcff8e 0%, #ffa9e58a 100%);
+    text-align: center;
+    text-decoration: none;
+}
+
+.popular a h5 {
+    font-size: 1rem;
+    padding: 16px 10px;
+    color: #000000;
+}
+
+.popular a img {
+    width: 300px;
+    height: 425px;
+    border-radius: 25px 25px 0 0;
 }

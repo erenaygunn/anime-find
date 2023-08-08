@@ -3,16 +3,14 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    
+    margin-top: 50px;
 }
 
 .popular a{
-    margin: 30px;
+    margin: 25px;
     width: 300px;
-    height: 480px;
+    height: 430px;
     border-radius: 25px;
-    background: #67b3ff;
-    background: linear-gradient(to right, #79bcff8e 0%, #ffa9e58a 100%);
     text-align: center;
     text-decoration: none;
 }
@@ -26,5 +24,9 @@
 .popular a img {
     width: 300px;
     height: 425px;
-    border-radius: 25px 25px 0 0;
+    border-radius: 25px;
+}
+
+.popular a img:hover {
+    filter: blur(3px);
 }

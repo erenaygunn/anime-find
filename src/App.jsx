@@ -6,6 +6,7 @@ import Upcoming from "./pages/Upcoming";
 import Airing from "./pages/Airing";
 import AnimeItem from './pages/AnimeItem';
 import SearchResults from './pages/ResultsPage';
+import Genres from './pages/Genres';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
         <Route path="/airing" Component={Airing}/>
         <Route path="/upcoming" Component={Upcoming}/>
         <Route path="/searchresults" Component={SearchResults}/>
+        <Route path="/genres" Component={Genres}/>
       </Routes>
     </Router>
   )

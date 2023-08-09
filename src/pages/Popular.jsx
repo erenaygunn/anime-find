@@ -6,7 +6,11 @@ import Navbar from "../components/Navbar/Navbar";
 
 const Popular = () => {
 
-  const {popularAnime,isSearch} = useGlobalContext();
+  const {getPopularAnime, popularAnime,isSearch} = useGlobalContext();
+
+  React.useEffect(() => {
+    getPopularAnime();
+}, [])
 
   const conditionalRender = () => {
     if(!isSearch){

@@ -11,6 +11,7 @@ const GET_POPULAR_ANIME = "GET_POPULAR_ANIME";
 const GET_UPCOMING_ANIME = "GET_UPCOMING_ANIME";
 const GET_AIRING_ANIME = "GET_AIRING_ANIME";
 const GET_PICTURES = "GET_PICTURES";
+const GET_GENRES = "GET_GENRES"
 
 //reducer
 const reducer = (state, action) => {
@@ -27,6 +28,8 @@ const reducer = (state, action) => {
             return {...state, airingAnime: action.payload, loading: false}
         case GET_PICTURES:
             return {...state, pictures: action.payload, loading: false}
+        case GET_GENRES:
+            return {...state, genres: action.payload, loading: false}
         default:
             return state;
     }
@@ -39,6 +42,7 @@ export const GlobalContextProvider = ({children}) => {
         popularAnime: [],
         upcomingAnime: [],
         airingAnime: [],
+        genres: [],
         pictures: [],
         isSearch: false,
         searchResults: [],
@@ -111,10 +115,15 @@ export const GlobalContextProvider = ({children}) => {
         dispatch({type: GET_PICTURES, payload: data.data})
     }
 
+    //get anime genres
+    const getGenres = async () => {
+        dispatch({type: LOADING})
+        const response = await fetch(`https://api.jikan.moe/v4/genres/anime`);
+        const data = await response.json();
+        dispatch({type: GET_GENRES, payload: data.data})
+    }
+
     //initial render
-    React.useEffect(() => {
-        getPopularAnime();
-    }, [])
 
     return(
         <GlobalContext.Provider value={{
@@ -126,7 +135,8 @@ export const GlobalContextProvider = ({children}) => {
             getPopularAnime,
             getUpcomingAnime,
             getAiringAnime,
-            getAnimePictures 
+            getAnimePictures,
+            getGenres
         }}>
             {children}
         </GlobalContext.Provider>

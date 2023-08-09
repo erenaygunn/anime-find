@@ -6,12 +6,15 @@ import Navbar from "../components/Navbar/Navbar";
 
 const Airing = () => {
 
-  const {airingAnime,isSearch} = useGlobalContext();
+  const {getAiringAnime, airingAnime, isSearch} = useGlobalContext();
+
+  React.useEffect(() => {
+    getAiringAnime();
+}, [])
 
   const conditionalRender = () => {
     if(!isSearch){
       return airingAnime.map((anime) => {
-        console.log(anime)
         return <Link to={`/anime/${anime.mal_id}`} key={anime.mal_id}>
           <img src={anime.images.jpg.large_image_url} alt="" />
         </Link> 
@@ -22,7 +25,7 @@ const Airing = () => {
   return (
     <div>
       <Navbar></Navbar>
-      <div className='airing'>
+      <div className='popular'>
         {conditionalRender()}
       </div>
     </div>

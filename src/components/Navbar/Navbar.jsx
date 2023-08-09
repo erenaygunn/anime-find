@@ -5,17 +5,6 @@ import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
 
-  document.addEventListener('DOMContentLoaded', (event) => {
-
-    const navLinks = document.querySelectorAll('.nav-links li a');
-
-    navLinks.forEach(link => {
-      if((link.getAttribute('href')) === window.location.pathname){
-        link.classList.add('active')
-        }
-      });
-    }
-  )
 
   return (
     <nav className='navbar'>

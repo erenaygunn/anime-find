@@ -17,7 +17,7 @@ const Genres = () => {
           return genres.map((genre) => {
             console.log(genre)
             console.log(genre.url)
-            return <Link to={`/genre/${genre.mal_id}`} key={genre.mal_id}>
+            return <Link to={genre.url} key={genre.mal_id}>
                 <p>{genre.name}</p>
                 <p>({genre.count})</p>
             </Link> 

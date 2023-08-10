@@ -52,7 +52,7 @@ export const GlobalContextProvider = ({children}) => {
     const [state, dispatch] = useReducer(reducer, intialState);
     const [search, setSearch] = React.useState('');
 
-
+    
     //handle change
     const handleChange = (e) => {
         setSearch(e.target.value);
@@ -85,7 +85,7 @@ export const GlobalContextProvider = ({children}) => {
     //fetch upcoming anime
     const getUpcomingAnime = async () => {
         dispatch({type: LOADING})
-        const response = await fetch(`${baseUrl}/top/anime?filter=upcoming`);
+        const response = await fetch(`${baseUrl}/seasons/upcoming`);
         const data = await response.json();
         dispatch({type: GET_UPCOMING_ANIME, payload: data.data})
     }
@@ -94,7 +94,7 @@ export const GlobalContextProvider = ({children}) => {
     //fetch airing anime
     const getAiringAnime = async () => {
         dispatch({type: LOADING})
-        const response = await fetch(`${baseUrl}/top/anime?filter=airing&rating=r17`);
+        const response = await fetch(`${baseUrl}/seasons/now`);
         const data = await response.json();
         dispatch({type: GET_AIRING_ANIME, payload: data.data})
     }

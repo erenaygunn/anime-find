@@ -94,7 +94,7 @@ export const GlobalContextProvider = ({children}) => {
     //fetch airing anime
     const getAiringAnime = async () => {
         dispatch({type: LOADING})
-        const response = await fetch(`${baseUrl}/top/anime?filter=airing`);
+        const response = await fetch(`${baseUrl}/top/anime?filter=airing&rating=r17`);
         const data = await response.json();
         dispatch({type: GET_AIRING_ANIME, payload: data.data})
     }
@@ -118,7 +118,7 @@ export const GlobalContextProvider = ({children}) => {
     //get anime genres
     const getGenres = async () => {
         dispatch({type: LOADING})
-        const response = await fetch(`https://api.jikan.moe/v4/genres/anime`);
+        const response = await fetch(`https://api.jikan.moe/v4/genres/anime?filter=genres`);
         const data = await response.json();
         dispatch({type: GET_GENRES, payload: data.data})
     }

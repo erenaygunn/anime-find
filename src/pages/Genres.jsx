@@ -2,6 +2,7 @@ import React from 'react'
 import { useGlobalContext } from '../context/global'
 import Navbar from '../components/Navbar/Navbar'
 import { Link } from 'react-router-dom'
+import "./style.css";
 
 const Genres = () => {
 
@@ -18,6 +19,7 @@ const Genres = () => {
             console.log(genre.url)
             return <Link to={`/genre/${genre.mal_id}`} key={genre.mal_id}>
                 <p>{genre.name}</p>
+                <p>({genre.count})</p>
             </Link> 
                    
           })

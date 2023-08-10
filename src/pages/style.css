@@ -30,3 +30,26 @@
 .popular a img:hover {
     filter: blur(3px);
 }
+
+.genres {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.genres a{
+    margin: 50px;
+    background-color: #000000;
+    width: 120px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.genres a p {
+    margin: 0;
+}

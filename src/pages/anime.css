@@ -1,0 +1,8 @@
+.anime-container {
+    display: flex;
+    background-color: lightgray;
+    padding: 50px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+

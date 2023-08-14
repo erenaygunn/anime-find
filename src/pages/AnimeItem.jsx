@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import Navbar from "../components/Navbar/Navbar"
-import "./anime.css"
+import "./info.css"
 
 const AnimeItem = () => {
 

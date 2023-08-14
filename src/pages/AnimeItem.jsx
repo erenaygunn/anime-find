@@ -18,7 +18,14 @@ const AnimeItem = () => {
         trailer,duration,aired, 
         season, images, rank, 
         score,scored_by, popularity, 
-        status, rating, source } = anime
+        status, rating, source, episodes, genres } = anime
+
+        function getGenres() {
+            return genres?.map((genre, index) => {
+                return index === genres.length - 1 ? genre.name : `${genre.name}, `;
+            });
+        }
+        
 
     const getAnime = async(anime) => {
         const response = await fetch(`https://api.jikan.moe/v4/anime/${anime}`)
@@ -44,20 +51,26 @@ const AnimeItem = () => {
         <div>
             <Navbar></Navbar>
             <div className="anime">
-                <h1>{anime.title_english}</h1>
                 <div className='anime-container'>
-                    <img src={anime.images?.jpg.large_image_url} alt="" />
-                    <div className="info">
-                        <p><span>Aired:</span><span> {aired?.string}</span></p>
-                        <p><span>Rating:</span><span> {rating}</span></p>
-                        <p><span>Rank:</span><span> {rank}</span></p>
-                        <p><span>Score:</span><span> {score}</span></p>
-                        <p><span>Scored By:</span><span> {scored_by}</span></p>
-                        <p><span>Popularity:</span><span> {popularity}</span></p>
-                        <p><span>Status:</span><span> {status}</span></p>
-                        <p><span>Source:</span><span> {source}</span></p>
-                        <p><span>Season:</span><span> {season}</span></p>
-                        <p><span>Duration:</span><span> {duration}</span></p>
+                    <h1>{title_english}</h1>
+                    <div className='info-container'>
+                        <img src={images?.jpg.large_image_url} alt="" />
+                        <div className="info">
+                            <p><span>Aired:</span><span> {aired?.string}</span></p>
+                            <p><span>Rating:</span><span> {rating}</span></p>
+                            <p><span>Rank:</span><span> {rank}</span></p>
+                            <p><span>Score:</span><span> {score}</span></p>
+                            <p><span>Scored By:</span><span> {scored_by} users</span></p>
+                            <p><span>Genres:</span><span> {getGenres()}</span></p>
+                            <p><span>Status:</span><span> {status}</span></p>
+                            <p><span>Source:</span><span> {source}</span></p>
+                            <p><span>Japanese title:</span><span> {title}</span></p>
+                            <p><span>Duration:</span><span> {duration}</span></p>
+                        </div>
+                    </div>
+                    <div className='description'>
+                        <h5>Description:</h5>
+                        <p className='synopsis'>{synopsis}</p>
                     </div>
                 </div>
             </div>

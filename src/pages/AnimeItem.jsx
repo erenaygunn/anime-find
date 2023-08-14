@@ -58,7 +58,7 @@ const AnimeItem = () => {
                         <div className="info">
                             <p><span>Aired:</span><span> {aired?.string}</span></p>
                             <p><span>Rating:</span><span> {rating}</span></p>
-                            <p><span>Rank:</span><span> {rank}</span></p>
+                            <p><span>Episodes:</span><span> {episodes}</span></p>
                             <p><span>Score:</span><span> {score}</span></p>
                             <p><span>Scored By:</span><span> {scored_by} users</span></p>
                             <p><span>Genres:</span><span> {getGenres()}</span></p>

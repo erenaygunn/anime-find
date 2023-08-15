@@ -60,18 +60,19 @@ const AnimeItem = () => {
                             <p><span>Rating:</span><span> {rating}</span></p>
                             <p><span>Episodes:</span><span> {episodes}</span></p>
                             <p><span>Score:</span><span> {score}</span></p>
-                            <p><span>Scored By:</span><span> {scored_by} users</span></p>
+                            <p><span>Scored By:</span><span> {scored_by != null ? scored_by : 0} users</span></p>
                             <p><span>Genres:</span><span> {getGenres()}</span></p>
                             <p><span>Status:</span><span> {status}</span></p>
                             <p><span>Source:</span><span> {source}</span></p>
                             <p><span>Japanese title:</span><span> {title}</span></p>
                             <p><span>Duration:</span><span> {duration}</span></p>
                         </div>
-                    </div>
-                    <div className='description'>
+                        <div className='description'>
                         <h5>Description:</h5>
                         <p className='synopsis'>{synopsis}</p>
                     </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>

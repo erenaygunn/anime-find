@@ -15,45 +15,37 @@
     margin-top: 20px;
     display: flex;
     flex-direction: column;
-    background: rgb(58,97,180);
-    background: linear-gradient(130deg, rgba(134, 172, 255, 0.445) 22%, rgba(255, 132, 132, 0.445) 36%, rgb(255, 242, 242) 50%);
-    padding: 50px 80px;
     align-items: center;
     justify-content: space-evenly;
     font-weight: 300;
-    width: 1600px;
     border-radius: 25px;
 }
 
 .info-container {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
 }
 
-.anime-container h1{
-    padding-bottom: 50px;
+.info-container li {
+    list-style: none;
+    margin: 0 30px;
+    white-space:normal;
 }
 
 .anime-container img {
     border-radius: 20px;
-    margin-right: 80px;
     width: 386px;
     height: 600px;
 }
 
 .anime-container .info p{
-    padding: 8px;
+    padding: 4px;
 }
 
 .anime-container .info p span:first-child {
     font-weight: 600;
 }
 
-.anime-container .description {
-    padding-top: 50px;
-}
-
-.anime-container .description h5{
-    padding-bottom: 10px;
+.anime-container .info p span:last-child {
+    white-space: nowrap;
 }

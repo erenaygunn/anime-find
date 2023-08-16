@@ -53,9 +53,9 @@ const AnimeItem = () => {
             <div className="anime">
                 <div className='anime-container'>
                     <h1>{title_english}</h1>
-                    <div className='info-container'>
-                        <img src={images?.jpg.large_image_url} alt="" />
-                        <div className="info">
+                    <ul className='info-container'>
+                        <li><img src={images?.jpg.large_image_url} alt="" /></li>
+                        <li className="info">
                             <p><span>Aired:</span><span> {aired?.string}</span></p>
                             <p><span>Rating:</span><span> {rating}</span></p>
                             <p><span>Episodes:</span><span> {episodes}</span></p>
@@ -64,14 +64,14 @@ const AnimeItem = () => {
                             <p><span>Genres:</span><span> {getGenres()}</span></p>
                             <p><span>Status:</span><span> {status}</span></p>
                             <p><span>Source:</span><span> {source}</span></p>
-                            <p><span>Japanese title:</span><span> {title}</span></p>
+                            <p><span>Alternate title:</span><span> {title}</span></p>
                             <p><span>Duration:</span><span> {duration}</span></p>
-                        </div>
-                        <div className='description'>
+                        </li>
+                        <li className='description'>
                         <h5>Description:</h5>
                         <p className='synopsis'>{synopsis}</p>
-                    </div>
-                    </div>
+                    </li>
+                    </ul>
                     
                 </div>
             </div>

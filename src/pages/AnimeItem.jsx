@@ -67,10 +67,13 @@ const AnimeItem = () => {
                             <p><span>Alternate title:</span><span> {title}</span></p>
                             <p><span>Duration:</span><span> {duration}</span></p>
                         </li>
-                        <li className='description'>
-                        <h5>Description:</h5>
-                        <p className='synopsis'>{synopsis}</p>
-                    </li>
+                        <li>
+                            <div className='description'>
+                                <h5>Description:</h5>
+                                <p className='synopsis'>{synopsis}</p>
+                            </div>
+
+                        </li>
                     </ul>
                     
                 </div>

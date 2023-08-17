@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 
 .anime {
-    font-size: 1.1rem;
     margin-top: 50px;
     font-family: 'Poppins', sans-serif;
     display: flex;
@@ -12,7 +12,6 @@
 
 
 .anime-container {
-    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,15 +20,29 @@
     border-radius: 25px;
 }
 
+.anime-container h1 {
+    margin: 0 0 30px 80px;
+    align-self: flex-start;
+}
+
 .info-container {
     display: flex;
     justify-content: center;
+    padding: 0;
+    margin: 0 50px;
 }
 
 .info-container li {
     list-style: none;
     margin: 0 30px;
     white-space:normal;
+    background: rgba(127, 168, 255, 0.425);
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.info-container li:first-child {
+    background: none;
 }
 
 .anime-container img {
@@ -40,6 +53,7 @@
 
 .anime-container .info p{
     padding: 4px;
+    white-space: nowrap;
 }
 
 .anime-container .info p span:first-child {
@@ -47,5 +61,9 @@
 }
 
 .anime-container .info p span:last-child {
-    white-space: nowrap;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.description p{
+    font-family: 'Open Sans', sans-serif;
 }

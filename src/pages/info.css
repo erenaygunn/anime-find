@@ -64,6 +64,10 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-.description p{
+.info-container ul .description {
+    background-color: rgba(127, 168, 255, 0.425);
+}
+
+.info-container ul .description p{
     font-family: 'Open Sans', sans-serif;
 }

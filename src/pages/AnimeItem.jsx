@@ -1,8 +1,11 @@
 import React, { useEffect } from 'react'
+import { useState } from 'react';
 import { useParams } from 'react-router-dom'
 import Navbar from "../components/Navbar/Navbar"
 import "./info.css"
 import Carousel from 'react-bootstrap/Carousel';
+import Tab from 'react-bootstrap/Tab';
+import Tabs from 'react-bootstrap/Tabs';
 
 const AnimeItem = () => {
 
@@ -26,6 +29,9 @@ const AnimeItem = () => {
                 return index === genres.length - 1 ? genre.name : `${genre.name}, `;
             });
         }
+
+
+    const [key, setKey] = useState('description');
         
 
     const getAnime = async(anime) => {
@@ -67,12 +73,19 @@ const AnimeItem = () => {
                         <p><span>Alternate title:</span><span> {title}</span></p>
                         <p><span>Duration:</span><span> {duration}</span></p>
                     </li>
-                    <ul className='right'>
-                        <li className='description'>
-                            <h5>Description:</h5>
-                            <p className='synopsis'>{synopsis}</p>
-                        </li>
-                        <li className='chars'>
+                    <li className='right'>
+                        <Tabs
+                        id="controlled-tab-example"
+                        activeKey={key}
+                        onSelect={(k) => setKey(k)}
+                        className="mb-3"
+                        >
+                        <Tab eventKey="description" title="Description">
+                            <div className='desc'>
+                                <p className='synopsis'>{synopsis}</p>
+                            </div>
+                        </Tab>
+                        <Tab eventKey="characters" title="Characters">
                         <Carousel>
                             {characters?.map((character, index) => {
                             const {role} = character
@@ -87,8 +100,9 @@ const AnimeItem = () => {
                                     
                             })}
                             </Carousel>
-                        </li>
-                    </ul>                        
+                        </Tab>
+                        </Tabs>
+                    </li>                        
                 </ul>                 
             </div>
         </div>

@@ -81,3 +81,18 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+.right {
+    width: 840px;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.right ul {
+    align-self: flex-start;
+}
+
+.desc {
+    position: absolute;
+    right: 480px;
+}

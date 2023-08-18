@@ -32,12 +32,16 @@
     margin: 0 50px;
 }
 
+.info {
+    height: 600px;
+    padding: 20px;
+}
+
 .info-container li {
     list-style: none;
     margin: 0 30px;
     white-space:normal;
     background: rgba(127, 168, 255, 0.425);
-    padding: 20px;
     border-radius: 25px;
 }
 
@@ -64,10 +68,16 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+.info-container ul li{
+}
+
 .info-container ul .description {
     background-color: rgba(127, 168, 255, 0.425);
+    margin: 0;
+    padding: 20px;
 }
 
 .info-container ul .description p{
     font-family: 'Open Sans', sans-serif;
 }
+

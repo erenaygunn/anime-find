@@ -42,7 +42,7 @@ const AnimeItem = () => {
     }
 
     const getCharacters = async(anime) => {
-        const response = await fetch(`https://api.jikan.moe/v4/anime/${anime}/characters`)
+        const response = await fetch(`https://api.jikan.moe/v4/anime/${anime}/characters?limit=10`)
         const data = await response.json()
         setCharacters(data.data)
         console.log(data.data)
@@ -73,7 +73,7 @@ const AnimeItem = () => {
                         <p><span>Alternate title:</span><span> {title}</span></p>
                         <p><span>Duration:</span><span> {duration}</span></p>
                     </li>
-                    <li className='right'>
+                    <li className='container'>
                         <Tabs
                         id="controlled-tab-example"
                         activeKey={key}
@@ -86,7 +86,7 @@ const AnimeItem = () => {
                             </div>
                         </Tab>
                         <Tab eventKey="characters" title="Characters">
-                        <Carousel>
+                        <Carousel >
                             {characters?.map((character, index) => {
                             const {role} = character
                             const {images, name} = character.character

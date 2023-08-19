@@ -81,18 +81,38 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-.right {
+.container {
     width: 840px;
     align-items: center;
     justify-content: flex-start;
     padding: 20px;
 }
 
-.right ul {
+.container ul {
     align-self: flex-start;
 }
 
 .desc {
-    position: absolute;
-    right: 480px;
+    position: relative;
+}
+
+.desc p {
+    padding: 10px 30px;
+}
+
+
+.container .carousel-inner img{
+    margin-left: 50px;
+    width: 300px;
+    height: 400px;
+    
+}
+
+
+.tab-content div:last-of-type {}
+
+.carousel.slide {
+    width: 400px;
+    margin:50px 0 0 180px;
+
 }

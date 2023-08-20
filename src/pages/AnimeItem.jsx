@@ -6,6 +6,7 @@ import "./info.css"
 import Carousel from 'react-bootstrap/Carousel';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
+import PrevButton from '../components/PrevButton/PrevButton';
 
 const AnimeItem = () => {
 
@@ -58,7 +59,10 @@ const AnimeItem = () => {
         <div>
             <Navbar></Navbar>
             <div className='anime-container'>
-                <h1>{title_english}</h1>
+                <div className='title'>
+                    <PrevButton></PrevButton>
+                    <h1>{title_english}</h1>
+                </div>
                 <ul className='info-container'>
                     <li><img src={images?.jpg.large_image_url} alt="" /></li>
                     <li className="info">
@@ -88,16 +92,18 @@ const AnimeItem = () => {
                         <Tab eventKey="characters" title="Characters">
                         <Carousel >
                             {characters?.map((character, index) => {
-                            const {role} = character
-                            const {images, name} = character.character
-                            return  <Carousel.Item>
-                                        <img src={images?.jpg.image_url} alt="" />
-                                        <Carousel.Caption>
-                                            <h3>{name}</h3>
-                                            <p>{role}</p>
-                                        </Carousel.Caption>
-                                        </Carousel.Item>
-                                    
+                                while(index < 11) {
+                                    const {role} = character
+                                    const {images, name} = character.character
+                                    return  <Carousel.Item key={index}>
+                                            <img src={images?.jpg.image_url} alt="" />
+                                            <Carousel.Caption>
+                                                <h3>{name}</h3>
+                                                <p>{role}</p>
+                                            </Carousel.Caption>
+                                            </Carousel.Item>
+                                        }
+                            
                             })}
                             </Carousel>
                         </Tab>

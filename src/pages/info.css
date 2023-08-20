@@ -20,10 +20,6 @@
     border-radius: 25px;
 }
 
-.anime-container h1 {
-    margin: 0 0 30px 80px;
-    align-self: flex-start;
-}
 
 .info-container {
     display: flex;
@@ -68,8 +64,6 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-.info-container ul li{
-}
 
 .info-container ul .description {
     background-color: rgba(127, 168, 255, 0.425);
@@ -105,14 +99,33 @@
     margin-left: 50px;
     width: 300px;
     height: 400px;
+    border-radius: 0;
     
 }
 
+.carousel-caption {
+    display: flex;
+    flex-direction: column;
+}
 
-.tab-content div:last-of-type {}
+.carousel-caption h3, .carousel-caption p{
+    background-color: rgba(0, 0, 0, 0.411);
+    margin-bottom: 5px;
+    padding: 3px 15px;
+    white-space: nowrap;
+    align-self: center;
+    border-radius: 20px;
+}
 
 .carousel.slide {
     width: 400px;
-    margin:50px 0 0 180px;
+    margin: 50px 0 0 180px;
 
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }

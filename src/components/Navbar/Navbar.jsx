@@ -13,7 +13,7 @@ const Navbar = () => {
 
   //clears search input when navigating to a different page
   const handleClick = () => {
-    if (location.pathname === '/searchresults') {
+    if (location.pathname != '/searchresults') {
       setSearch('');
     }
   }

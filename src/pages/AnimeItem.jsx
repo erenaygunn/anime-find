@@ -61,7 +61,7 @@ const AnimeItem = () => {
             <div className='anime-container'>
                 <div className='title'>
                     <PrevButton></PrevButton>
-                    <h1>{title_english}</h1>
+                    <h1>{title_english != null ? title_english : title}</h1>
                 </div>
                 <ul className='info-container'>
                     <li><img src={images?.jpg.large_image_url} alt="" /></li>

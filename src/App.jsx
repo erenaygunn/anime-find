@@ -7,7 +7,6 @@ import Airing from "./pages/Airing";
 import AnimeItem from './pages/AnimeItem';
 import SearchResults from './pages/ResultsPage';
 import Genres from './pages/Genres';
-import "./index.css"
 
 function App() {
 

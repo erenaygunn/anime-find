@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 
-
-
 .anime {
     margin-top: 50px;
     font-family: 'Poppins', sans-serif;
@@ -45,6 +43,7 @@
     border-top: 2px solid rgba(255, 255, 255, 0.5) ;
     border-left: 2px solid rgba(255, 255, 255, 0.5) ;
     backdrop-filter: blur(6px);
+    
 }
 
 .info-container li:first-child {

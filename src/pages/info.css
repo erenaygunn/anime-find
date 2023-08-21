@@ -1,12 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 
-body {
-    background-image: url("../images/bg-desktop.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 100%;
-}
+
 
 .anime {
     margin-top: 50px;
@@ -45,12 +40,13 @@ body {
     list-style: none;
     margin: 0 30px;
     white-space:normal;
-    background: rgba(172, 208, 255, 0.616);
+    background: rgba(130, 188, 255, 0.616);
     border-radius: 25px;
     border-top: 2px solid rgba(255, 255, 255, 0.5) ;
     border-left: 2px solid rgba(255, 255, 255, 0.5) ;
     backdrop-filter: blur(6px);
 }
+
 .info-container li:first-child {
     background: none;
 }
@@ -151,7 +147,7 @@ body {
 .title h1 {
     background: #67b3ff;
     background: linear-gradient(to left, #79bcff 0%, #ffa9e5 100%);
-    text-shadow: 3px 3px 4px rgb(255, 255, 255);
     background-clip: text;
     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

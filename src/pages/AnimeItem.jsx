@@ -56,7 +56,7 @@ const AnimeItem = () => {
 
 
     return (
-        <div>
+        <div className='anime'>
             <Navbar></Navbar>
             <div className='anime-container'>
                 <div className='title'>

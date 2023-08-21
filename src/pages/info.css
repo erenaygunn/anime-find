@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 
 .anime {
+    background-image: url("../images/clouds.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 160%;
+    
 }
 
 
@@ -12,10 +17,7 @@
     justify-content: space-evenly;
     font-weight: 300;
     border-radius: 25px;
-    background-image: url("../images/clouds.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-y: 120%;
+    padding-bottom: 100px;
 }
 
 

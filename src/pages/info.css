@@ -5,7 +5,7 @@
     background-image: url("../images/clouds.png");
     background-repeat: no-repeat;
     background-size: contain;
-    background-position-y: 160%;
+    background-position-y: 170%;
     
 }
 
@@ -40,9 +40,12 @@
     white-space:normal;
     background: rgba(130, 188, 255, 0.616);
     border-radius: 25px;
-    border-top: 2px solid rgba(255, 255, 255, 0.5) ;
-    border-left: 2px solid rgba(255, 255, 255, 0.5) ;
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(99, 154, 255, 0.25);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);  
+    filter: drop-shadow(0 30px 10px rgba(0,0,0,0.125));
     
 }
 

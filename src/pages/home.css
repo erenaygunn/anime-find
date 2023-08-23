@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600&display=swap');
 
-body {
-}
-
 .main {
     display: flex;
     justify-content: space-between;
@@ -13,9 +10,7 @@ body {
     position: absolute;
     background: rgb(58,97,180);
     background: linear-gradient(130deg, rgba(134, 172, 255, 0.445) 22%, rgba(255, 132, 132, 0.445) 36%, rgba(255,255,255,1) 50%);
-    
-}
-
+    }
 
 .left {
     white-space: nowrap;
@@ -23,6 +18,7 @@ body {
     display: inline-block;
     margin: 150px 50px 50px 150px;
     color: #fff;
+
 }
 
 .left h1 {

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;600;700&display=swap');
 
 .anime {
     background-image: url("../images/clouds.png");
@@ -34,15 +35,14 @@
     width: 420px;
 }
 
-.info-container li {
+.info-container .jpg,  .info-container .info, .info-container .container{
     list-style: none;
     margin: 0 30px;
     white-space:normal;
-    background: rgba(130, 188, 255, 0.616);
+    background: rgba(130, 188, 255, 0.416);
     border-radius: 25px;
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
-    background-color: rgba(99, 154, 255, 0.25);
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.125);  
     filter: drop-shadow(0 30px 10px rgba(0,0,0,0.125));
@@ -90,9 +90,42 @@
     padding: 20px;
 }
 
-.container ul {
-    align-self: flex-start;
+.container ul li {
+    background: none;
+    background-color: transparent;
 }
+
+li.nav-item {
+    background: none;
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-tabs {
+    border-color: #fff;
+}
+.nav-tabs .nav-item {
+    padding-left:10px;
+}
+
+.nav-link {
+    color: #000;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: #000;
+}
+    
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    /* active */
+    border: 1px solid #fff;
+    color: #fff;
+    background: #67b3ff;
+    background: linear-gradient(to left, #79bcff 0%, #ffa9e5 100%);
+    transition: all 0.3s;
+}
+
 
 .desc {
     position: relative;

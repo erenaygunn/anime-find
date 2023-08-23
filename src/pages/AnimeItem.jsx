@@ -64,7 +64,7 @@ const AnimeItem = () => {
                     <h1>{title_english != null ? title_english : title}</h1>
                 </div>
                 <ul className='info-container'>
-                    <li><img src={images?.jpg.large_image_url} alt="" /></li>
+                    <li className='jpg'><img src={images?.jpg.large_image_url} alt="" /></li>
                     <li className="info">
                         <p><span>Aired:</span><span> {aired?.string}</span></p>
                         <p><span>Rating:</span><span> {rating}</span></p>

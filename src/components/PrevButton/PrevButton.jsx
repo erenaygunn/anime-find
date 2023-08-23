@@ -10,19 +10,19 @@ const PrevButton = () => {
 
   const {
     setSearch,
-  } = useGlobalContext()
+    state  } = useGlobalContext()
 
   let navigate = useNavigate()
 
   function goBack() {
+
     navigate(-1);
-    
-    if(location.pathname != '/searchresults'){
-      location.reload()
+
+
+    if(location.pathname === "/searchresults"){
+      state.isSearch = false;
       setSearch('')
     }
-
-
   }
 
   return (

@@ -3,10 +3,7 @@ import searchicon from "../../images/1.png";
 import { useGlobalContext } from "../../context/global";
 import { Link, useNavigate } from 'react-router-dom';
 
-
-
 export default function SearchBar() {
-  
   
   const {
     handleSubmit, 
@@ -15,8 +12,6 @@ export default function SearchBar() {
     handleChange ,
     } = useGlobalContext()
 
-    
-    
     const navigate = useNavigate()
 
     const handleEnterKeyPress = async (event) => {

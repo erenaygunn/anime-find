@@ -35,7 +35,6 @@ const reducer = (state, action) => {
     }
 }
 
-
 export const GlobalContextProvider = ({children}) => {
     //intial state
     const intialState = {
@@ -52,7 +51,6 @@ export const GlobalContextProvider = ({children}) => {
     const [state, dispatch] = useReducer(reducer, intialState);
     const [search, setSearch] = React.useState('');
 
-    
     //handle change
     const handleChange = (e) => {
         setSearch(e.target.value);
@@ -60,7 +58,6 @@ export const GlobalContextProvider = ({children}) => {
             state.isSearch = false;
         }
     }
-
 
     //handle submit
     const handleSubmit = (e) => {
@@ -89,7 +86,6 @@ export const GlobalContextProvider = ({children}) => {
         const data = await response.json();
         dispatch({type: GET_UPCOMING_ANIME, payload: data.data})
     }
-
 
     //fetch airing anime
     const getAiringAnime = async () => {
@@ -123,8 +119,6 @@ export const GlobalContextProvider = ({children}) => {
         dispatch({type: GET_GENRES, payload: data.data})
     }
 
-    //initial render
-
     return(
         <GlobalContext.Provider value={{
             ...state,
@@ -132,6 +126,8 @@ export const GlobalContextProvider = ({children}) => {
             handleSubmit,
             searchAnime,
             search,
+            state,
+            setSearch,
             getPopularAnime,
             getUpcomingAnime,
             getAiringAnime,

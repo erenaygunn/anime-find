@@ -1,14 +1,28 @@
 import React from 'react'
 import "./prevbutton.css";
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import previous from "../../images/previous.png"
+import { useGlobalContext } from '../../context/global';
 
 const PrevButton = () => {
+
+  const location = useLocation();
+
+  const {
+    setSearch,
+  } = useGlobalContext()
 
   let navigate = useNavigate()
 
   function goBack() {
     navigate(-1);
+    
+    if(location.pathname != '/searchresults'){
+      location.reload()
+      setSearch('')
+    }
+
+
   }
 
   return (

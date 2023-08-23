@@ -29,8 +29,10 @@ const Popular = () => {
   return (
     <div>
       <Navbar></Navbar>
-      <PrevButton></PrevButton>
-      <h1>Popular Animes</h1>
+      <header>
+        <PrevButton></PrevButton>
+        <h1>Popular Animes</h1>
+      </header>
       <div className='popular'>
         {conditionalRender()}
       </div>

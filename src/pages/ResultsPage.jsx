@@ -2,10 +2,13 @@ import React from 'react'
 import { useGlobalContext } from '../context/global'
 import { Link } from 'react-router-dom';
 import  Navbar  from '../components/Navbar/Navbar';
+import PrevButton from "../components/PrevButton/PrevButton";
 
 const SearchResults = () => {
 
-  const {isSearch, searchResults} = useGlobalContext()
+  const {isSearch, searchResults, search} = useGlobalContext()
+
+  
 
   const conditionalRender = () => {
     if(isSearch){
@@ -22,6 +25,10 @@ const SearchResults = () => {
   return (
     <div>
       <Navbar></Navbar>
+      <header>
+        <PrevButton></PrevButton>
+        <h1>Results for "{search}"</h1>
+      </header>
       <div className='popular'>
         {conditionalRender()}
       </div>

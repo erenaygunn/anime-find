@@ -3,6 +3,7 @@ import {useGlobalContext} from "../context/global";
 import { Link } from 'react-router-dom';
 import "./style.css";
 import Navbar from "../components/Navbar/Navbar";
+import PrevButton from "../components/PrevButton/PrevButton";
 
 const Upcoming = () => {
 
@@ -26,6 +27,10 @@ const Upcoming = () => {
   return (
     <div>
       <Navbar></Navbar>
+      <header>
+        <PrevButton></PrevButton>
+        <h1>Upcoming Animes</h1>
+      </header>
       <div className='popular'>
         {conditionalRender()}
       </div>

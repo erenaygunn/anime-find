@@ -50,7 +50,7 @@
     background: none;
 }
 
-.anime-container img {
+.anime-container .info-container img {
     border-radius: 0px;
     width: 386px;
     height: 600px;

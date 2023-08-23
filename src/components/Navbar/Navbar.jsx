@@ -1,21 +1,22 @@
 import React from 'react'
 import "./navbar.css";
 import Searchbar from "../SearchBar/SearchBar"
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import { useGlobalContext } from '../../context/global';
 
 const Navbar = () => {
 
+  const location = useLocation()
   const {
     setSearch,
   } = useGlobalContext()
 
-
   //clears search input when navigating to a different page
   const handleClick = () => {
-    if (location.pathname != '/searchresults') {
-      setSearch('');
-    }
+    location.reload()
+    if(location.pathname != '/searchresults'){
+      setSearch('')
+    }  
   }
 
   return (

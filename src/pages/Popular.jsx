@@ -3,6 +3,7 @@ import {useGlobalContext} from "../context/global";
 import { Link } from 'react-router-dom';
 import "./style.css";
 import Navbar from "../components/Navbar/Navbar";
+import PrevButton from "../components/PrevButton/PrevButton";
 
 const Popular = () => {
 
@@ -15,8 +16,12 @@ const Popular = () => {
   const conditionalRender = () => {
     if(!isSearch){
       return popularAnime.map((anime) => {
+        console.log(anime)
         return <Link to={`/anime/${anime.mal_id}`} key={anime.mal_id}>
-          <img src={anime.images.jpg.large_image_url} alt="" />
+         
+            <img src={anime.images.jpg.large_image_url} alt="" />
+            <h4>{anime.title_english}</h4>
+          
         </Link> 
       })
     }
@@ -24,6 +29,8 @@ const Popular = () => {
   return (
     <div>
       <Navbar></Navbar>
+      <PrevButton></PrevButton>
+      <h1>Popular Animes</h1>
       <div className='popular'>
         {conditionalRender()}
       </div>

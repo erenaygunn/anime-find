@@ -12,6 +12,7 @@ const SearchResults = () => {
       return searchResults?.map((anime) => {
         return <Link to={`/anime/${anime.mal_id}`} key={anime.mal_id}>
             <img src={anime.images.jpg.large_image_url} alt="" />
+            <h4>{anime.title_english}</h4>
         </Link>
       }
       )

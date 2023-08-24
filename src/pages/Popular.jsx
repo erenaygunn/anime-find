@@ -21,6 +21,7 @@ const Popular = () => {
          
             <img src={anime.images.jpg.large_image_url} alt="" />
             <h4>{anime.title_english != null ? anime.title_english : anime.title}</h4>
+            <h5>🔥{anime.score}</h5>
           
         </Link> 
       })

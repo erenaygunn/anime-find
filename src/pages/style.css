@@ -1,30 +1,3 @@
-@property --angle {
-    syntax: '<angle>';
-    initial-value: 90deg;
-    inherits: true;
-}
-  
-@property --gradX {
-    syntax: '<percentage>';
-    initial-value: 50%;
-    inherits: true;
-}
-  
-@property --gradY {
-    syntax: '<percentage>';
-    initial-value: 0%;
-    inherits: true;
-}
-
-:root {
-	--d: 2500ms;
-	--angle: 90deg;
-	--gradX: 100%;
-	--gradY: 50%;
-	--c1: rgba(168, 239, 255, 1);
-	--c2: rgba(168, 239, 255, 0.1);
-}
-
 .popular {
     display: flex;
     align-items: center;
@@ -61,8 +34,20 @@
     text-align: center;
     position: absolute;
     bottom: 0;
-    transition: all 0.5s;
-    
+    transition: 0.5s;
+}
+
+.popular a h5 {
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.611);
+    font-size: 1.2rem;
+    border-radius: 25px;
+    padding: 8px 12px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    transition: 0.5s;
+    color: #fff;
 }
 
 .popular a img {
@@ -76,6 +61,14 @@
 }
 
 .popular a:hover h4 {
+    margin-bottom: 350px;
+    background-color: rgba(0, 0, 0, 0.849);
+}
+
+.popular a:hover h5 {
+    opacity: 100%;
+    margin-bottom: 300px;
+    background-color: rgba(0, 0, 0, 0.849);
 }
 
 .genres {

@@ -18,7 +18,6 @@ const PrevButton = () => {
 
     navigate(-1);
 
-
     if(location.pathname === "/searchresults"){
       state.isSearch = false;
       setSearch('')

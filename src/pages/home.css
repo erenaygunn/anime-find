@@ -8,8 +8,8 @@
     width: 100vw;
     height: 100vh;
     position: absolute;
-    background: rgb(58,97,180);
-    background: linear-gradient(130deg, rgba(134, 172, 255, 0.445) 22%, rgba(255, 132, 132, 0.445) 36%, rgba(255,255,255,1) 50%);
+    background-image: linear-gradient(130deg, rgba(134, 172, 255, 0.445) 22%, rgba(255, 132, 132, 0.445) 36%, rgba(255,255,255,1) 50%), url('../images/bg-desktop.svg');
+    background-size: contain;
     }
 
 .left {

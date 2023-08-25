@@ -17,6 +17,7 @@
     justify-content: center;
     width: 250px;
     height: 270px;
+    border-radius: 25px;
     border: white;
     border-bottom: 5px solid transparent;
     white-space: nowrap;

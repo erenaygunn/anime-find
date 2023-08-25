@@ -4,7 +4,7 @@
     justify-content: center;
     flex-wrap: wrap;
     background-image: url("../images/background.png");
-    background-repeat: repeat-y;
+    background-repeat: repeat;
     background-size: contain;
     background-position-x: 30px;
 }

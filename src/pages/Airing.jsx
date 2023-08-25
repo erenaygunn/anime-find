@@ -20,6 +20,7 @@ const Airing = () => {
         return <Link to={`/anime/${anime.mal_id}`} key={anime.mal_id}>
           <img src={anime.images.jpg.large_image_url} alt="" />
             <h4>{anime.title_english != null ? anime.title_english : anime.title}</h4>
+            {anime.score != null ? <h5>🔥{anime.score}</h5> : null}
         </Link> 
       })
     }

@@ -183,7 +183,6 @@
 
     .cards {
         margin-top: 50px;
-        flex-direction: column;
     }
 
     .cards .card {
@@ -228,16 +227,25 @@
         font-size: 1rem;
     }
 
+    .cards {
+        margin-top: 30px;
+    }
+
     .cards .card {
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .cards .card h5 {
+        font-size: 0.6rem;
     }
 
     .cards a {
-        margin: 14px;
+        margin: 12px;
     }
 
     .cards .card img {
-        width: 60px;
+        width: 40px;
+        padding-bottom: 10px;
     }
 }

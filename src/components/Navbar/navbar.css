@@ -11,7 +11,7 @@
 
 .navbar a {
     color: black;
-    font-size: 1rem;
+    font-size: 0.9rem;
     text-decoration: none;
 }
 
@@ -80,7 +80,7 @@
 
 .nav-links li a{
     transition: 0.1s;
-    padding: 8px 15px;
+    padding: 8px 12px;
     text-align: center;
     margin: 0px;
     border-bottom: 3px solid transparent;
@@ -173,8 +173,70 @@
     .navbar ul.nav-links {
         padding: 0;
     }
+
+    .navbar .search {
+        margin-top: 20px;
+    }
 }
 
 @media screen and (max-width: 730px) {
+    .navbar {
+        padding: 10px 0;
+    }
 
+    .nav-links li {
+        margin: 10px 6px;
+        padding: 0 10px;
+    }
+
+    .nav-links li a{
+        font-size: 0.7rem;
+        padding: 5px;
+    }
+
+    .navbar .search{
+        left: 5px;
+        margin: 10px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .navbar .search input{
+        font-size: 0.8rem;
+        width: 200px;
+        height: 20px;
+        padding: 15px;
+    }
+
+    .navbar .search {
+        left: 40px;
+    }
+
+    .navbar .search .search-button {
+        top: -8px;
+        right: 35px;
+        padding: 0;
+    }
+
+    .navbar .search img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .nav-links li {
+        margin: 10px 10px;
+        padding: 0 7px;
+    }
+
+    .nav-links li a {
+        padding: 5px 0;
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .nav-links li {
+        margin: 10px 3px;
+        padding: 0 5px;
+    }
 }

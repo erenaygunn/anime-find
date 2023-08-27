@@ -32,7 +32,7 @@
     list-style: none;
     margin: 0 30px;
     white-space:normal;
-    background: rgba(136, 188, 255, 0.651);
+    background: rgba(147, 194, 255, 0.829);
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.125);  
     filter: drop-shadow(0 30px 10px rgba(0,0,0,0.125));
@@ -235,7 +235,7 @@ li.nav-item {
     .anime-container { padding: 0;}
 
     .anime-container .title {
-        margin: 30px 0 30px 0;
+        margin: 30px 15px;
         align-self: center;
         align-items: center;
         padding: 0;

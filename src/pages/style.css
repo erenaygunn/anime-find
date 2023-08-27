@@ -142,9 +142,11 @@ header h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+@media screen and (max-width: 768px) {
+    .popular {
+        flex-direction: column;
+    }
 
-
-@media screen and (max-width: 580px) {
     header {
         margin: 30px 0 20px 0px;
         font-size: 0.9rem;
@@ -155,10 +157,35 @@ header h1 {
         justify-content: center;
     }
 
+    .anime-card.card-visible {
+        transform: scale(1.1);
+        -webkit-box-shadow: 0px 0px 40px 7px rgb(138, 185, 255);
+        -moz-box-shadow: 0px 0px 40px 7px rgb(138, 185, 255);
+        box-shadow: 0px 0px 40px 7px rgb(138, 185, 255);
+    }
+
+    .anime-card.card-visible h4, .anime-card.card-visible h5 {
+        -webkit-box-shadow: 0px 0px 30px 5px rgb(103, 164, 255);
+        -moz-box-shadow: 0px 0px 30px 5px rgb(103, 164, 255);
+        box-shadow: 0px 0px 30px 5px rgb(103, 164, 255);
+        background-color: rgba(0, 0, 0, 0.849);
+    }
+
+    .anime-card.card-visible h5 {
+        opacity: 100%;
+        margin-bottom: 380px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .anime-card.card-visible h5 {
+        margin-bottom: 270px;
+    }
+
     .popular a {
         width: 220px;
         height: 330px;
-        margin: 20px;
+        margin: 30px;
     }
 
     .popular a h4  {
@@ -166,11 +193,22 @@ header h1 {
     }
 }
 
+@media screen and (max-width: 420px) {
+    header {
+        margin: 0 0 10px 0;
+    }
+}
+
 @media screen and (max-width: 380px) {
+    .anime-card.card-visible h5 {
+        margin-bottom: 220px;
+        font-size: 0.8rem;
+    }
+
     .popular a {
         width: 180px;
         height: 270px;
-        margin: 15px 20px;
+        margin: 35px 20px;
     }
 
     .popular a h4  {

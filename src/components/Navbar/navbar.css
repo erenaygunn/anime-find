@@ -247,7 +247,7 @@
 
 @media screen and (max-width: 380px) {
     .nav-links li {
-        margin: 10px 3px;
+        margin: 10px 8px;
         padding: 0 5px;
     }
 }

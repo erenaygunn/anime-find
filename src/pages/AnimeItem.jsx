@@ -79,7 +79,7 @@ const AnimeItem = () => {
                     </li>
                     <li className='container'>
                         <Tabs
-                        id="controlled-tab-example"
+                        id="tab"
                         activeKey={key}
                         onSelect={(k) => setKey(k)}
                         className="mb-3"

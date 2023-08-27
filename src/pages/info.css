@@ -2,16 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;600;700&display=swap');
 
-.anime {
-    background-image: url("../images/clouds.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-y: 170%;
-    
-}
-
-
 .anime-container {
+    background-image: url("../images/background.png");
+    background-repeat: repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,10 +32,13 @@
     list-style: none;
     margin: 0 30px;
     white-space:normal;
-    background: rgba(120, 179, 255, 0.416);
+    background: rgba(136, 188, 255, 0.651);
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.125);  
     filter: drop-shadow(0 30px 10px rgba(0,0,0,0.125));
+    -webkit-box-shadow: 0px 0px 10px 3px #ffcbefb9;
+    -moz-box-shadow: 0px 0px 10px 3px #ffcbefb9;
+    box-shadow: 0px 0px 10px 3px #ffcbefb9;
     
 }
 
@@ -85,6 +81,7 @@
     align-items: center;
     justify-content: flex-start;
     padding: 20px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 

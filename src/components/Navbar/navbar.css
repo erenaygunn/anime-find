@@ -185,6 +185,22 @@
     }
 
     .nav-links li {
+        margin: 10px 10px;
+        padding: 0 10px;
+    }
+
+    .nav-links li a{
+        padding: 8px;
+    }
+
+    .navbar .search{
+        left: 5px;
+        margin: 10px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .nav-links li {
         margin: 10px 6px;
         padding: 0 10px;
     }
@@ -192,11 +208,6 @@
     .nav-links li a{
         font-size: 0.7rem;
         padding: 5px;
-    }
-
-    .navbar .search{
-        left: 5px;
-        margin: 10px 0 0 0;
     }
 }
 

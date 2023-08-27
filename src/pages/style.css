@@ -126,7 +126,7 @@ header {
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    margin: 30px 0 0px 100px;
+    margin: 30px 0 15px 100px;
     border-radius: 25px;
     padding: 10px 0 0 20px;
 }
@@ -141,4 +141,39 @@ header h1 {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+
+@media screen and (max-width: 580px) {
+    header {
+        margin: 30px 0 0 0px;
+        font-size: 0.9rem;
+        align-self: center;
+        justify-self: center;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .popular a {
+        width: 220px;
+        height: 330px;
+    }
+
+    .popular a h4  {
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .popular a {
+        width: 180px;
+        height: 270px;
+        margin: 20px 25px;
+    }
+
+    .popular a h4  {
+        font-size: 0.9rem;
+        width: 150px;
+    }
 }

@@ -1,5 +1,5 @@
 # AnimeFind
-AnimeFind is an open sourced anime discovery website built with React.js and Jikan API.
+AnimeFind is an anime discovery website built with React.js and Jikan API.
 
 - Check Popular Animes
 - Check Airing Animes

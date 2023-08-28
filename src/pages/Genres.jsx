@@ -2,7 +2,7 @@ import React from 'react'
 import { useGlobalContext } from '../context/global'
 import Navbar from '../components/Navbar/Navbar'
 import { Link } from 'react-router-dom'
-import "./style.css";
+import "./genres.css";
 import Card from '../components/Card/Card';
 import action from "../images/genres/action.png"
 import fantasy from "../images/genres/fantasy.png"
@@ -22,6 +22,7 @@ import comedy from "../images/genres/comedy.png"
 import avant from "../images/genres/avant.png"
 import adventure from "../images/genres/adventure.png"
 import gourmet from "../images/genres/gourmet.png"
+import PrevButton from "../components/PrevButton/PrevButton"
 
 const Genres = () => {
 
@@ -69,7 +70,11 @@ const Genres = () => {
         <div>
             <Navbar></Navbar>
             <div className="genres">
-                {conditionalRender()}
+            <div className='genres-title'>
+              <PrevButton></PrevButton>
+              <h1>Genres</h1>
+            </div>
+                <div className='genre-cards'>{conditionalRender()}</div>
             </div>
         </div>
     )

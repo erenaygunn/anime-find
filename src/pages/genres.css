@@ -1,0 +1,117 @@
+.genres {
+    background-image: url("../images/background.png");
+    background-repeat: repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 30px;
+    padding: 50px 0; 
+}
+
+.genre-cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.genres a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 30px 10px 30px;
+}
+
+.genres .card h5 {
+    color: #000;
+}
+
+
+.genres .card {
+    transition: 0.2s;
+    background: none;
+    width: 150px;
+    height: 150px;
+    margin: 0;
+    padding: 20px 20px 10px 20px;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.075);
+    backdrop-filter: blur(5px);
+}
+
+.genres .card:hover {
+    background-color: rgba(226, 233, 253, 0.792);
+}
+
+
+.genres a img {
+    width: 70px;
+    padding: 0;
+}
+
+.genres a h5{
+    margin-top: 10px;
+}
+
+.genres .genres-title {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 0 0 100px;
+    background: #67b3ff;
+    background: linear-gradient(to left, #79bcff 0%, #ffa9e5 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.genres .genres-title button{
+    margin-right: 30px;
+}
+
+@media screen and (max-width: 920px) {
+    .genres .genres-title {
+        align-self: center;
+        margin-left: 0;
+    }
+
+    .genres {
+        margin: 40px 0 0 0;
+        padding: 0;   
+    }
+
+    .genre-cards {
+        margin-bottom: 30px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    
+
+    .genres .card {
+        width: 100px;
+        height: 100px;
+        padding: 20px 0px 10px 0px;
+    }
+
+    .genres a img {
+        width: 45px;
+    }
+
+    .genres .card h5 {
+        font-size: 1rem;
+        margin-top: 5px;
+        white-space: pre-wrap;
+        text-align: center;
+    }
+
+    .genres a {
+        margin: 20px;
+    }
+}

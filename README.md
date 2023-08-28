@@ -7,3 +7,5 @@ AnimeFind is an open sourced anime discovery website built with React.js and Jik
 - Check Specific Genres
 - Search for animes
 - View Anime details and info
+
+### https://animefind.netlify.app/

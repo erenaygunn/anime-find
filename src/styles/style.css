@@ -1,4 +1,4 @@
-.popular {
+.page {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,7 +9,7 @@
     background-position-x: 30px;
 }
 
-.popular a{
+.page a{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,7 +26,7 @@
     box-shadow: 0px 0px 10px 3px #ffa9e5b9;
 }
 
-.popular a h4{
+.page a h4{
     padding: 8px 12px;
     max-width:250px;
     border-radius: 25px;
@@ -40,7 +40,7 @@
     transition: 0.5s;
 }
 
-.popular a h5 {
+.page a h5 {
     opacity: 0;
     background-color: rgba(0, 0, 0, 0.611);
     font-size: 1.2rem;
@@ -53,27 +53,27 @@
     color: #fff;
 }
 
-.popular a img {
+.page a img {
     width: 100%;
     height: 100%;
     border-radius: 25px;
 }
 
-.popular a:hover{
+.page a:hover{
     transform: scale(1.1);
     -webkit-box-shadow: 0px 0px 40px 7px rgb(138, 185, 255);
     -moz-box-shadow: 0px 0px 40px 7px rgb(138, 185, 255);
     box-shadow: 0px 0px 40px 7px rgb(138, 185, 255);
 }
 
-.popular a:hover h4, .popular a:hover h5 {
+.page a:hover h4, .page a:hover h5 {
     -webkit-box-shadow: 0px 0px 30px 5px rgb(103, 164, 255);
     -moz-box-shadow: 0px 0px 30px 5px rgb(103, 164, 255);
     box-shadow: 0px 0px 30px 5px rgb(103, 164, 255);
     background-color: rgba(0, 0, 0, 0.849);
 }
 
-.popular a:hover h5 {
+.page a:hover h5 {
     opacity: 100%;
     margin-bottom: 380px;
 }
@@ -101,7 +101,7 @@ header h1 {
     -webkit-text-fill-color: transparent;
 }
 @media screen and (max-width: 768px) {
-    .popular {
+    .page {
         flex-direction: column;
     }
 
@@ -140,13 +140,17 @@ header h1 {
         margin-bottom: 270px;
     }
 
-    .popular a {
+    .page a:hover h5 {
+        margin-bottom: 270px;
+    }
+
+    .page a {
         width: 220px;
         height: 330px;
         margin: 30px;
     }
 
-    .popular a h4  {
+    .page a h4  {
         width: 180px;
     }
 }
@@ -163,13 +167,17 @@ header h1 {
         font-size: 0.8rem;
     }
 
-    .popular a {
+    .page a:hover h5 {
+        margin-bottom: 220px;
+    }
+
+    .page a {
         width: 180px;
         height: 270px;
         margin: 35px 20px;
     }
 
-    .popular a h4  {
+    .page a h4  {
         font-size: 0.9rem;
         width: 150px;
     }

@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { useState } from 'react';
 import { useParams } from 'react-router-dom'
 import Navbar from "../components/Navbar/Navbar"
-import "./info.css"
+import "../styles/info.css"
 import Carousel from 'react-bootstrap/Carousel';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
@@ -39,14 +39,12 @@ const AnimeItem = () => {
         const response = await fetch(`https://api.jikan.moe/v4/anime/${anime}`)
         const data = await response.json()
         setAnime(data.data)
-        console.log(data.data)
     }
 
     const getCharacters = async(anime) => {
         const response = await fetch(`https://api.jikan.moe/v4/anime/${anime}/characters?limit=10`)
         const data = await response.json()
         setCharacters(data.data)
-        console.log(data.data)
     }
 
     useEffect(() => {

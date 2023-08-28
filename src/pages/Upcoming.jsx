@@ -1,7 +1,7 @@
 import React from 'react'
 import {useGlobalContext} from "../context/global";
 import { Link } from 'react-router-dom';
-import "./style.css";
+import "../styles/style.css";
 import Navbar from "../components/Navbar/Navbar";
 import PrevButton from "../components/PrevButton/PrevButton";
 import useIntersectionObserver from '../context/useIntersectionObserver';
@@ -47,7 +47,7 @@ const Upcoming = () => {
         <PrevButton></PrevButton>
         <h1>Upcoming Animes</h1>
       </header>
-      <div className='popular'>
+      <div className='page'>
         {conditionalRender()}
       </div>
     </div>

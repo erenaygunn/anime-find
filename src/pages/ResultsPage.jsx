@@ -43,7 +43,7 @@ const SearchResults = () => {
         <PrevButton></PrevButton>
         <h1>Results for "{search}"</h1>
       </header>
-      <div className='popular'>
+      <div className='page'>
         {conditionalRender()}
       </div>
     </div>

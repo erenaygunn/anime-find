@@ -1,5 +1,5 @@
 import "./searchbar.css"
-import searchicon from "../../images/1.png";
+import searchicon from "../../images/searchicon.png";
 import { useGlobalContext } from "../../context/global";
 import { Link, useNavigate } from 'react-router-dom';
 

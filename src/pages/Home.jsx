@@ -1,5 +1,5 @@
 import React from 'react'
-import "./home.css"
+import "../styles/home.css"
 import Image from "../images/illustration.png";
 import SearchBar from '../components/SearchBar/SearchBar';
 import Card from "../components/Card/Card"

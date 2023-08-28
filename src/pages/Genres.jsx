@@ -2,7 +2,7 @@ import React from 'react'
 import { useGlobalContext } from '../context/global'
 import Navbar from '../components/Navbar/Navbar'
 import { Link } from 'react-router-dom'
-import "./genres.css";
+import "../styles/genres.css";
 import Card from '../components/Card/Card';
 import action from "../images/genres/action.png"
 import fantasy from "../images/genres/fantasy.png"
@@ -57,7 +57,6 @@ const Genres = () => {
     const conditionalRender = () => {
         if(!isSearch){
           return genres.map((genre) => {
-            console.log(genre)
             return <Link to={genre.url} key={genre.mal_id} target='_blank'>
                 <Card source={genreImages[genre.mal_id]} text={genre.name}></Card>
             </Link> 

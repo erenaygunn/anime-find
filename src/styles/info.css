@@ -217,7 +217,8 @@ li.nav-item {
     }
     
     .info p {
-        margin-bottom: 5px;
+        margin-bottom: 3px;
+        padding: 2px;
     }
 }
 
@@ -267,6 +268,7 @@ li.nav-item {
 
     .info {
         width: 250px;
+        height: 550px;
     }
 
     .anime-container .info-container li {
